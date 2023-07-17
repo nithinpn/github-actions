@@ -2,7 +2,7 @@ name: Daily Karate Tests
 
 on:
   schedule:
-    - cron: '05 15 * * *'  # Adjust the time (in IST) as per your requirement
+    - cron: '13 15 * * *'  # Adjust the time (in IST) as per your requirement
 
 jobs:
   build-and-test:
