@@ -1,4 +1,4 @@
-name: Daily Karate Tests
+name:  Karate Tests
 
 on:
   schedule:
