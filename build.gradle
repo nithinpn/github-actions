@@ -8,10 +8,23 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+sourceSets {
+    test {
+        resources {
+            srcDirs = ['src/test/java']
+        }
+    }
+}
+
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.intuit.karate:karate-core:1.4.0'
+    testImplementation 'com.intuit.karate:karate-junit5:1.4.0'
+    // testImplementation 'com.intuit.karate:karate-apache:0.9.6'
+
+
 }
 
 test {
