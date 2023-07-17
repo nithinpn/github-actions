@@ -1,5 +1,8 @@
 name: hello-world
-on: push
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '55 3,15 * * *'
 jobs:
   my-job:
     runs-on: ubuntu-latest
