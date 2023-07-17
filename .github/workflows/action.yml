@@ -18,4 +18,4 @@ jobs:
           java-version: '11'  # Specify the Java version required for your project
 
       - name: Build and test
-        run: ./gradlew test
+        run:  gradle test --tests -DskipTests=false TestRunner.run 
