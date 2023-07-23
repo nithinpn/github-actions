@@ -1,0 +1,13 @@
+#name: karate report
+#
+#on:
+#  schedule:
+#    - cron: '04 14 * * *'
+#  workflow_dispatch:
+#
+#jobs:
+#  my-job:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: initial-run
+#        run: echo "its working in 4:46"
